@@ -1,0 +1,16 @@
+# mocha settings
+require:
+  - ts-node/register
+  - esm
+  - source-map-support/register
+recursive: true
+color: true
+exit: true
+timeout: 120000
+extension:
+  - ts
+  - test.ts
+spec:
+  - ./lambda/test/*.test.ts
+  - ./lambda/test/**/*.test.ts
+
